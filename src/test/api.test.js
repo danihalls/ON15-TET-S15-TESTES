@@ -28,9 +28,9 @@ describe("API test", () => {
             .post("/users/create")
             .expect("Content-Type", /json/)
             .send({
-                name: "Paula",
-                email: "paula@email.com",
-                password: "senhamuitodificil"
+                name: "Daniele",
+                email: "dani@gmail.com",
+                password: "1234"
             })
             .expect(201)
             .end((err, res) => {
